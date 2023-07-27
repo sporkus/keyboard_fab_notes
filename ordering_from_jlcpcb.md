@@ -27,7 +27,7 @@ Upload, and it may take a minute to process. Occasionally, the preview doesn't w
 There are a lot of options here, but the default should work well.
 
 * `thickness`: 1.6mm is typical. 1.2mm if you want something flexible.
-* `color`: personal preference 
+* `color`: personal preference
 * `surface finish`: `HASL (with lead)` is the cheapest and is totally functional. I perfer the lead-free finish as I don't like having lead in my home. `ENIG` is a more precise gold-plated finish and adds significant cost if you are only ordering prototypes, but it's a great option for production runs.
 * `remove order number`: JLCPCB will put the order number randomly on your PCB. If you want them removed, you can choose `yes` for a small fee. I choose the free `specify a location` option typically, which means JLCPCB will put the order number where the text "JLCJLCJLCJLC" is on PCB.
 
@@ -43,7 +43,7 @@ PCB assmebly can be a bit more complicated. But it's a great service and it's ve
 `Aseembly side`: Economic PCBA will allow placing components on one side. Choose the side where most of the components are.
 `ConfConfirm Parts Placement`: for a small fee, you get a high resolution preview to confirm the placement of the components immediately after order. This is an option I highly recommend because it makes spot checking any mistakes much easier. Otherwise, you will be waiting for their staff to check and get confirmation over email across timezones.
 
-## Bill of Material (BOM) and Component Placement List (CPL) 
+## Bill of Material (BOM) and Component Placement List (CPL)
 
 BOM is a list of components, along of their reference and component specifications. CPL is where those components should be placed on the board. JLCPCB has a [tutorial](https://jlcpcb.com/help/catalog/22-Generate-BOM-%26-CPL) on how they should be formatted. Hopefully, the project author will make them available. Otherwise, this will be covered in a future tutorial.
 
@@ -64,13 +64,15 @@ Occasionally, LCSC will not have enough stock for the parts that are specificed 
 
 ## Confirming component placement
 ![](./imgs/ordering_from_jlcpcb/Screenshot%202023-07-01%20at%202.45.14%20PM.png)
-At this step, you should be able to see a preview for the pcb and the components, even if the preview has failed in all the previous steps. Choose the side that you will be getting components placed, and make sure 
+At this step, you should be able to see a preview for the pcb and the components, even if the preview has failed in all the previous steps. Choose the side that you will be getting components placed, and make sure
 that it roughly looks like a PCB. Do not proceed otherwise!
 
 
+![](./imgs/ordering_from_jlcpcb/Screenshot 2023-07-26 at 6.33.44 PM.png)
+For initial inspection, the easiest way is to download the high resolution image, instead of panning around with their interactive tool.
+
 ![](./imgs/ordering_from_jlcpcb/Screenshot%202023-07-01%20at%202.48.27%20PM.png)
 Next, we will zoom in on each component and make sure that they are placed correctly by clicking on each row on the table on the right. Non-polarized components such as resistors will not have any markings on them, so make sure that they are located and rotated correctly. Hopefully, these are all already prepared for you but you **must** confirm. Sometimes you may have to move the component a bit to see the silkscreen marker is.
-
 
 ![](./imgs/ordering_from_jlcpcb/Screenshot%202023-07-01%20at%202.54.56%20PM.png)
 ICs and polarized parts such as diodes will have marking on them. Make sure that the component marker lines up with the silkscreen maker.
